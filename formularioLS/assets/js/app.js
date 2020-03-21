@@ -49,7 +49,7 @@ function deleteTweet(e) {
 	e.preventDefault();
 	//delegation to delete tweet
 	if(e.target.className === 'borrar-tweet') {
-		if(confirm('Sure? You want to delete') === true) {
+		if(confirm(`Sure? You want to delete this tweet`) === true) {
 			e.target.parentElement.remove();
 			alert('Tweet Deleted')
 
